@@ -1,0 +1,16 @@
+﻿@model List<UserListViewModel>
+
+@{
+    ViewData["Title"] = "SeeUsers";
+}
+
+
+<h1>These are the users in the system:</h1>
+@foreach (var item in Model)
+{
+
+    <h5>@item.Id. @item.FirstName @item.LastName</h5>
+}
+
+
+
